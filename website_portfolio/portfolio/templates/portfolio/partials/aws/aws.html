@@ -1,0 +1,11 @@
+{% load static %}
+<h3 class="fw-bold lh-1 mb-3">AWS</h3>
+<div class="d-flex row row-cols-auto mb-5">
+    <!-- making it as granualar as possible, these partials will be re-usable in the project description -->
+    {% include "portfolio/partials/aws/ec2/ec2.html" %}   
+    {% include "portfolio/partials/aws/efs/efs.html" %}   
+    {% include "portfolio/partials/aws/rds/rds.html" %}   
+    {% include "portfolio/partials/aws/route_53/route_53.html" %}   
+    {% include "portfolio/partials/aws/vpc/vpc.html" %}   
+    {% include "portfolio/partials/aws/asg/asg.html" %}  
+</div>

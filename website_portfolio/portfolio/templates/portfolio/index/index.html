@@ -12,7 +12,7 @@
         <h1 class="display-5 fw-bold lh-1 mb-3">Hello!</h1>
         <p class="lead">My name is Rama Pranadinata.</p>
         <p class="lead">I'm a full stack developer that has recently made a transition from biotech to tech.</p>
-        <p class="mt-5 lead">This website is hosted on AWS Elastic Beanstalk.</p>
+        <!-- <p class="mt-5 lead">This website is hosted on AWS Elastic Beanstalk.</p> -->
         <p class="lead">Please click on the icons below to learn more aboutt he projects I've worked on.</p>
       </div>
       
@@ -21,6 +21,8 @@
 
 <div class="container col-xxl-8 px-1 py-5">
   {% include "portfolio/partials/languages/languages.html" %}
+  {% include "portfolio/partials/aws/aws.html" %}
+  {% include "portfolio/partials/frameworks/frameworks.html" %}
 </div>
 
   {% endblock %}

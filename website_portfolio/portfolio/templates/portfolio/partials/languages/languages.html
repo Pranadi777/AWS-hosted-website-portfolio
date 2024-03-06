@@ -1,14 +1,15 @@
 {% load static %}
-<h1 class="display-5 fw-bold lh-1 mb-3">Languages</h1>
-<div class="d-flex">
-    <!-- python -->
-    {% include "portfolio/partials/python/python.html" %}   
-    {% include "portfolio/partials/r/r.html" %}
-    {% include "portfolio/partials/c_sharp/c_sharp.html" %}
-    {% include "portfolio/partials/js/js.html" %}    
-    {% include "portfolio/partials/html/html.html" %}  
-    {% include "portfolio/partials/css/css.html" %}     
-    {% include "portfolio/partials/jquery/jquery.html" %}     
-    {% include "portfolio/partials/bash/bash.html" %}       
-    {% include "portfolio/partials/vba/vba.html" %}    
+<h3 class="fw-bold lh-1 mb-3">Languages</h3>
+<div class="d-flex row row-cols-auto mb-5">
+    <!-- making it as granualar as possible, these partials will be re-usable in the project description -->
+    {% include "portfolio/partials/languages/python/python.html" %}   
+    {% include "portfolio/partials/languages/r/r.html" %}
+    {% include "portfolio/partials/languages/c_sharp/c_sharp.html" %}
+    {% include "portfolio/partials/languages/js/js.html" %}    
+    {% include "portfolio/partials/languages/html/html.html" %}  
+    {% include "portfolio/partials/languages/css/css.html" %}     
+    {% include "portfolio/partials/languages/jquery/jquery.html" %}     
+    {% include "portfolio/partials/languages/bash/bash.html" %}       
+    {% include "portfolio/partials/languages/vba/vba.html" %}    
+    {% include "portfolio/partials/languages/java/java.html" %}   
 </div>

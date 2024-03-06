@@ -8,9 +8,6 @@ website_portfolio/db.sqlite3
 *.log
 *.pot
 
-#images
-website_portfolio/portfolio/static/images
-
 # Unit test / coverage reports
 .tox/
 .coverage
