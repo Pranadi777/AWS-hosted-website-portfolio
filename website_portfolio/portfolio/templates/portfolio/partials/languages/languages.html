@@ -2,7 +2,9 @@
 <h3 class="fw-bold lh-1 mb-3">Languages</h3>
 <div class="d-flex row row-cols-auto mb-5">
     <!-- making it as granualar as possible, these partials will be re-usable in the project description -->
-    {% for language in languages %}
-        {% include "portfolio/partials/languages/language.html" %} 
+    {% for item in items %}
+        {% if item.type == 'language' %}
+            {% include "portfolio/partials/items/item.html" %} 
+        {% endif %}
     {% endfor %}
 </div>

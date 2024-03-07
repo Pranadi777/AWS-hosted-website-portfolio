@@ -17,6 +17,7 @@ class Command(BaseCommand):
                 name = item['name'],
                 reference = item['reference'],
                 type = item['type'],
+                image = item['image'],
             )
 
         for project in projects:
@@ -29,7 +30,7 @@ class Command(BaseCommand):
                 result = project['result'],
                 image = project['image']
             )
-
+            #creates the ManyToMany relationship based on the custom_id field
             project_obj.items.set(Item.objects.filter(custom_id__in = project['items']))
 
         print("succesfully reset data")

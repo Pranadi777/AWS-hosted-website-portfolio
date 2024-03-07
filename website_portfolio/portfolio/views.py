@@ -6,18 +6,12 @@ from portfolio.models import Project, Item
 # Create your views here.
 def index(request):
 
-    #on load, get all the objects you need to render
-    languages = Item.objects.filter(type = 'language')
-    awss = Item.objects.filter(type = 'aws')
-    frameworks = Item.objects.filter(type = 'framework')
-
-
+    #on load, get all the item objects to be rendered
+    items = Item.objects.all()
     context = {
-        'languages':languages,
-        'awss': awss,
-        'frameworks': frameworks
+        'items': items
     }
-
+    
     return render(request, 'portfolio/index/index.html', context)
 
 
@@ -31,10 +25,9 @@ def project(request):
     item_obj = Item.objects.get(reference = item)
     print(item_obj)
     #pull the project objs that contain the item object, and get related
-    project_objs = Project.objects.filter(items = item_obj).prefetch_related("items")
-    print(project_objs)
-
-
+    project_objs = Project.objects.filter(items = item_obj).prefetch_related()
+    for p in project_objs:
+        print(p.items.all())
 
     context = {
         'projects': project_objs,

@@ -1,8 +1,10 @@
 {% load static %}
 <h3 class="fw-bold lh-1 mb-3">Frameworks</h3>
-<div class="d-flex row row-cols-auto mb-5">
+<div class="d-flex row row-cols-auto">
     <!-- making it as granualar as possible, these partials will be re-usable in the project description -->
-    {% for framework in frameworks %}
-        {% include "portfolio/partials/frameworks/framework.html" %} 
+    {% for item in items %}
+        {% if item.type == 'framework' %}
+            {% include "portfolio/partials/items/item.html" %} 
+        {% endif %}
     {% endfor %}
 </div>

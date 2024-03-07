@@ -12,18 +12,19 @@
         <h1 class="display-5 fw-bold lh-1 mb-3">Hello!</h1>
         <p class="lead">My name is Rama Pranadinata.</p>
         <p class="lead">I'm a full stack developer that has recently made a transition from biotech to tech.</p>
-        <!-- <p class="mt-5 lead">This website is hosted on AWS Elastic Beanstalk.</p> -->
         <p class="lead">Please click on the icons below to learn more about the projects I've worked on.</p>
       </div>
       
     </div>
 </div>
 
-<div class="container col-xxl-8 px-1 py-5">
+<!-- This is where items (skills) are rendered based on their type -->
+<div class="container col-xxl-8 px-1">
   {% include "portfolio/partials/languages/languages.html" %}
   {% include "portfolio/partials/aws/awss.html" %}
   {% include "portfolio/partials/frameworks/frameworks.html" %}
 </div>
+<!-- This is the div that gets HTMX replacement for projects selected -->
 <div class="container col-xxl-8 px-1 py-5" id="projects">
   Click any of the items above to view associated project(s)
 </div>

@@ -5,6 +5,7 @@ class Item(models.Model):
     name = models.CharField(max_length = 20)
     reference = models.CharField(max_length = 20, null=True)
     type = models.CharField(max_length = 20, null=True)
+    image = models.CharField(max_length = 30, null=True)
 
     class Meta:
         ordering = ['custom_id']
@@ -18,7 +19,7 @@ class Project(models.Model):
     goal = models.CharField(max_length = 200)
     method = models.CharField(max_length = 500)
     result = models.CharField(max_length = 500)
-    items = models.ManyToManyField(Item, symmetrical=False, blank=True)
+    items = models.ManyToManyField(Item, related_name='project_items', symmetrical=False, blank=True)
     image = models.CharField(max_length = 50)
 
     class Meta:
