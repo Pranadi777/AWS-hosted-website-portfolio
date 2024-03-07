@@ -1,8 +1,10 @@
 {% load static %}
-<h3 class="fw-bold lh-1 mb-3">Languages</h3>
+<h3 class="fw-bold lh-1 mb-3">AWS</h3>
 <div class="d-flex row row-cols-auto mb-5">
     <!-- making it as granualar as possible, these partials will be re-usable in the project description -->
-    {% for language in languages %}
-        {% include "portfolio/partials/languages/language.html" %} 
+    {% for aws in awss %}
+        {% include "portfolio/partials/aws/aws.html" %} 
     {% endfor %}
+
+
 </div>

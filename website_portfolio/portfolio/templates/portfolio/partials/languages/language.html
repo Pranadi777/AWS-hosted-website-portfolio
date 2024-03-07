@@ -1,0 +1,14 @@
+{% load static %}
+
+{% with 'images/'|add:language.reference|add:'.png' as image %}
+<div class="d-flex col flex-column align-items-center mx-2"
+    hx-trigger="click"
+    hx-get="/project/"
+    hx-target="#projects"
+    hx-vals='{"item":"{{language.reference}}"}'>
+    <p>{{language.name}}</p>
+    <div class="">
+        <img style="width: 50px;" src="{% static image %}" class="d-block mx-lg-auto" alt="{{language.name}} logo" loading="lazy">        
+    </div>
+</div>
+{% endwith %}
