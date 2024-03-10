@@ -2,12 +2,21 @@
 {% load static %}
 
 {% block content %}
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Email</h5>
-      <p class="card-text">rama.pranadi@gmail.com</p>
-      <a href=mailto:"rama.pranadi@gmail.com" class="btn btn-primary">Email</a>
+<div class="container py-5 gap-5 col-xxl-10 px-1 d-flex">
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/gmail.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Email</h5>
+            <a href=mailto:"rama.pranadi@gmail.com" class="btn btn-primary">Email</a>
+        </div> 
     </div>
-  </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/linkedin.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Linkedin</h5>
+            <a href="https://www.linkedin.com/in/ramapranadinata/" target="_blank" class="btn btn-primary">Linkedin</a>
+        </div>
+    </div>
+</div>    
 {% endblock %}
