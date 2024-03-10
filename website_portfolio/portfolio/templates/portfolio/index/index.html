@@ -9,14 +9,11 @@
         <img style="width: 80%;" src="{% static 'images/profile.JPG' %}" class="d-block mx-lg-auto img-fluid rounded-circle" alt="Profile Picture" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Hello!</h1>
+        <h1 class="display-5 fw-bold lh-1 mb-5">Hello there!</h1>
 
         <p class="lead">My name is Rama Pranadinata.</p>
 
-        <p class="lead">I'm a full stack developer that has recently made a transition from biotech to tech. During my time in the life sciences, I've built and desgined various applications from <b>full stack apps</b>, <strong>e-commerce websites</strong>, <strong>databases</strong>, and <strong>recruiting platforms</strong>.</p>
-
-        <p class="lead">I've put the pippete down and I am very excited about making a full time commitment to software development, and hope to do so at an exciting organization.
-        </p>
+        <p class="lead">I'm a full stack developer that has recently made a transition from biotech to tech. I've built and desgined various applications from <b>full stack apps</b>, <strong>e-commerce websites</strong>, <strong>databases</strong>, and <strong>recruiting platforms</strong>.</p>
 
         <p class="lead">Please click on the icons below to learn more about the projects I've worked on.</p>
       </div>
@@ -30,9 +27,12 @@
   {% include "portfolio/partials/aws/awss.html" %}
   {% include "portfolio/partials/frameworks/frameworks.html" %}
   {% include "portfolio/partials/databases/databases.html" %}
+  {% include "portfolio/partials/hosting/hosting.html" %}
+  {% include "portfolio/partials/other/other.html" %}
+
 </div>
 <!-- This is the div that gets HTMX replacement for projects selected -->
-<div style="min-height: 500px" class="container col-xxl-10 px-1 py-5 project mb-5" id="projects">
+<div style="min-height: 500px" class="d-flex container col-xxl-10 px-1 py-5 project mb-5" id="projects">
   Click any of the items above to view associated project(s)
 </div>
 

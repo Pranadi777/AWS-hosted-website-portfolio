@@ -7,6 +7,7 @@
     #     'result': '###',
     #     'image': '###',
     #     'items': [#,#]
+    #     'links': [#,#]
     # },
 
     # {
@@ -38,16 +39,58 @@ links = [
     },
 ]
 
+# 101 python       201 Bootstrap   301 ASG        401 PostgreSQL   501 AWS             601 Linux
+# 102 bash         202 Django      302 EC2        402 MongoDB      502 Digitalocean    602 Google Analytics
+# 103 C#           203 HTMX        303 EFS        403 SQlite       503 Nginx           603 Tableau
+# 104 CSS          204 React       304 RDS        404 MS Access    504 Gunicorn        604 WordPress
+# 105 HTML                         305 Route 53                                        605 DjangoNinja
+# 106 JAVA                         306 VPC 
+# 107 jQuery                       307 EBS
+# 108 JavaScript                   
+# 109 R                         
+# 110 VBA                        
+
+
 projects = [
     {
         'custom_id': 1,
-        'title': 'JobGenome',
-        'goal': 'Create a comprehensive life science job searching website that find jobs that may not be found on traditional job boards like LinkedIn, Indeed, and Biospace.',
-        'method': 'Utilized Python libraries like Selenium, asyncio, and multi threading to efficiently scrape the web.',
-        'result': 'Over >20,000 jobs in databases from >300 companies, 15% of which are not on LinkedIn or Indeed',
+        'title': 'JobGenome.bio',
+        'goal': 'Create a comprehensive life science job board with a simple a quick search feature to quickly scan new positions',
+        'method': 'Scrape the web (efficiently and effectively) utilized Python libraries like Selenium, asyncio, and multi threading. Allow job seekers to search for jobs on a Django app.',
+        'result': 'Scraping results in over >20,000 jobs from >300 companies, 15% of which are not on LinkedIn or Indeed',
         'image': 'jobgenome.png',
-        'items': [101,104,105,107,108,201,202,203,401,403],
+        'items': [101,104,105,107,108,201,202,203,401,403,502,503,504,601,602],
         'links': [101,102]
+    },
+    {
+        'custom_id': 2,
+        'title': 'Portfolio Website',
+        'goal': 'Showcase projects and skills on Django app, hosted on AWS.',
+        'method': "Create a simple Django app, with a trendy front-end (HTMX), deployed on everyone's favorite, AWS cloud.",
+        'result': 'Landing a job is still TBD :).',
+        'image': 'portfolio_website.png',
+        'items': [101,104,105,107,108,201,202,203,501,307,403,601,602],
+        'links': []
+    },
+    {
+        'custom_id': 3,
+        'title': 'NotumNB',
+        'goal': 'Create app to support NotumNB functions such as: creating candidate profiles, grading assessments, and providing clients a UI/UX. Also have the front-end be usbale by non-tech people.',
+        'method': 'Built a Python, MongoDB, and WordPress (friendly UI/UX).',
+        'result': 'Website provided a portal for clients, candidates, and NotumNB employees to interact with.',
+        'image': 'notumnb.png',
+        'items': [101,402,603,604],
+        'links': []
+    },
+    {
+        'custom_id': 4,
+        'title': 'API development',
+        'goal': 'Develop an API to eventually use for >20,000 job data in JobGenome.',
+        'method': 'Utilize Django and React (a skill sought out by employers!)',
+        'result': 'Built an API using Django Ninja, with a React/Next.js app that consumes it.',
+        'image': 'apidev.png',
+        'items': [],
+        'links': []
     },
 ]
 
@@ -194,6 +237,13 @@ items = [
         'image': 'vpc.svg',
     },
     {
+        'custom_id' : 307,
+        'name': 'EBS',
+        'reference': 'ebs',
+        'type':'aws',
+        'image': 'ebs.svg',
+    },
+    {
         'custom_id' : 401,
         'name': 'PostgreSQL',
         'reference': 'postgresql',
@@ -220,6 +270,69 @@ items = [
         'reference': 'msaccess',
         'type':'database',
         'image': 'msaccess.png',
+    },
+    {
+        'custom_id' : 501,
+        'name': 'AWS',
+        'reference': 'aws',
+        'type':'hosting',
+        'image': 'aws.png',
+    },
+    {
+        'custom_id' : 502,
+        'name': 'Digital Ocean',
+        'reference': 'digitalocean',
+        'type':'hosting',
+        'image': 'digitalocean.png',
+    },
+    {
+        'custom_id' : 503,
+        'name': 'Nginx',
+        'reference': 'nginx',
+        'type':'hosting',
+        'image': 'nginx.png',
+    },
+    {
+        'custom_id' : 504,
+        'name': 'Gunicorn',
+        'reference': 'gunicorn',
+        'type':'hosting',
+        'image': 'gunicorn.png',
+    },
+    {
+        'custom_id' : 601,
+        'name': 'Linux',
+        'reference': 'linux',
+        'type':'other',
+        'image': 'linux.png',
+    },
+    {
+        'custom_id' : 602,
+        'name': 'Google Analytics',
+        'reference': 'googleanalytics',
+        'type':'other',
+        'image': 'googleanalytics.png',
+    },
+    {
+        'custom_id' : 603,
+        'name': 'Tableau',
+        'reference': 'tableau',
+        'type':'other',
+        'image': 'tableau.png',
+    },
+    {
+        'custom_id' : 604,
+        'name': 'Wordpress',
+        'reference': 'wordpress',
+        'type':'other',
+        'image': 'wordpress.png',
+    },
+    {
+        'custom_id' : 605,
+        'name': 'Django Ninja',
+        'reference': 'djangoninja',
+        'type':'other',
+        'image': 'djangoninja.png',
     },
 
 ]

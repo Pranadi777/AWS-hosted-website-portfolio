@@ -1,13 +1,9 @@
 {% load static %}
-<div class="d-flex align-items-center">
-    <h3 class="fw-bold mb-2">Databases</h3>
-    <span class="ms-2">(SQL and NoSQL)</span>    
-</div>
-
+<h3 class="fw-bold lh-1 mb-2">Other</h3>
 <div class="d-flex row row-cols-auto mb-3">
     <!-- making it as granualar as possible, these partials will be re-usable in the project description -->
     {% for item in items %}
-        {% if item.type == 'database' %}
+        {% if item.type == 'other' %}
             {% include "portfolio/partials/items/item.html" %} 
         {% endif %}
     {% endfor %}
