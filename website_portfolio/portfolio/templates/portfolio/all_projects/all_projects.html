@@ -1,0 +1,10 @@
+{% extends "../base/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class=" d-flex flex-wrap container col-xxl-12 px-1">
+    {% for project in projects %}
+        {% include "portfolio/partials/projects/project.html" %}
+    {% endfor %}
+</div>
+{% endblock %}

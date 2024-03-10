@@ -4,6 +4,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('all_projects/', views.all_projects, name='all_projects'),
+    path('contact/', views.contact, name='contact'),
     #debug toolbar
     path("__debug__/", include("debug_toolbar.urls")),
 ]

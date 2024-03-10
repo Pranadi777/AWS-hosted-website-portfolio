@@ -37,13 +37,38 @@ links = [
         'description': 'The Github repo for JobGenome',
         'url':'https://github.com/Pranadi777/JG2'
     },
+    {
+        'custom_id': 201,
+        'name':'Github Repo',
+        'description': 'The Github repo for the porfolio website',
+        'url':'https://github.com/Pranadi777/website-portfolio'
+    },
+    {
+        'custom_id': 301,
+        'name':'Guru/NotumNB Demo',
+        'description': 'Youtube video of website',
+        'url':'https://youtu.be/tA7CL0-acjo?si=6iz5VujlQ5CFgURK'
+    },
+    {
+        'custom_id': 302,
+        'name':'Tableau Client UI/UX demo',
+        'description': 'Tableau demo',
+        'url':'https://youtu.be/_-LkSBuLJOQ?si=AcWFD3dk4Cj9bv7t'
+    },
+    {
+        'custom_id': 401,
+        'name':'Github Repo',
+        'description': 'API developement in Django and React/Next.js',
+        'url':'https://github.com/Pranadi777/Django-API-Development'
+    },
+
 ]
 
 # 101 python       201 Bootstrap   301 ASG        401 PostgreSQL   501 AWS             601 Linux
 # 102 bash         202 Django      302 EC2        402 MongoDB      502 Digitalocean    602 Google Analytics
 # 103 C#           203 HTMX        303 EFS        403 SQlite       503 Nginx           603 Tableau
 # 104 CSS          204 React       304 RDS        404 MS Access    504 Gunicorn        604 WordPress
-# 105 HTML                         305 Route 53                                        605 DjangoNinja
+# 105 HTML         205 Nextjs                305 Route 53                                        605 DjangoNinja
 # 106 JAVA                         306 VPC 
 # 107 jQuery                       307 EBS
 # 108 JavaScript                   
@@ -60,7 +85,7 @@ projects = [
         'result': 'Scraping results in over >20,000 jobs from >300 companies, 15% of which are not on LinkedIn or Indeed',
         'image': 'jobgenome.png',
         'items': [101,104,105,107,108,201,202,203,401,403,502,503,504,601,602],
-        'links': [101,102]
+        'links': [101]
     },
     {
         'custom_id': 2,
@@ -70,7 +95,7 @@ projects = [
         'result': 'Landing a job is still TBD :).',
         'image': 'portfolio_website.png',
         'items': [101,104,105,107,108,201,202,203,501,307,403,601,602],
-        'links': []
+        'links': [201]
     },
     {
         'custom_id': 3,
@@ -80,17 +105,17 @@ projects = [
         'result': 'Website provided a portal for clients, candidates, and NotumNB employees to interact with.',
         'image': 'notumnb.png',
         'items': [101,402,603,604],
-        'links': []
+        'links': [301,302]
     },
     {
         'custom_id': 4,
         'title': 'API development',
-        'goal': 'Develop an API to eventually use for >20,000 job data in JobGenome.',
-        'method': 'Utilize Django and React (a skill sought out by employers!)',
+        'goal': 'Learn API developement',
+        'method': 'Develop an API on Django, with a React/Next.js to consume it.',
         'result': 'Built an API using Django Ninja, with a React/Next.js app that consumes it.',
         'image': 'apidev.png',
-        'items': [],
-        'links': []
+        'items': [101,104,105,107,108,201,202,203,204,205,307,403,605],
+        'links': [401]
     },
 ]
 
@@ -193,6 +218,13 @@ items = [
         'reference': 'react',
         'type':'framework',
         'image': 'react.png',
+    },
+    {
+        'custom_id' : 205,
+        'name': 'Next.js',
+        'reference': 'nextjs',
+        'type':'framework',
+        'image': 'nextjs.png',
     },
     {
         'custom_id' : 301,
