@@ -9,6 +9,7 @@ realtionships.png
 project_notes.txt
 website_portfolio/.env
 website_portfolio/db.sqlite3
+.ebextensions
 
 .DS_Store
 

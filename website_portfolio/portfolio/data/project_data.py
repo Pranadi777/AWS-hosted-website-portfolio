@@ -61,6 +61,42 @@ links = [
         'description': 'API developement in Django and React/Next.js',
         'url':'https://github.com/Pranadi777/Django-API-Development'
     },
+    {
+        'custom_id': 501,
+        'name':'Github Repo',
+        'description': 'Github Repo for AWS Project',
+        'url':'https://github.com/Pranadi777/AWS-hosting-WordPress'
+    },
+    {
+        'custom_id': 601,
+        'name':'Github Repo',
+        'description': 'Give Girdin repo',
+        'url':'https://github.com/Pranadi777/RNAseq-GIV-Girdin-Study'
+    },
+    {
+        'custom_id': 602,
+        'name':'E-cig Publication',
+        'description': 'Ecig publication',
+        'url':'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7841355/'
+    },
+    {
+        'custom_id': 603,
+        'name':'Giv-Girdin Publication',
+        'description': 'Giv Girdin publication',
+        'url':'https://pubmed.ncbi.nlm.nih.gov/33055214/'
+    },
+    {
+        'custom_id': 701,
+        'name':'Github Repo, game#1',
+        'description': 'Github repo for unity games',
+        'url':'https://github.com/Pranadi777/dungeon-crawler-game'
+    },
+    {
+        'custom_id': 702,
+        'name':'Github Repo, game#2',
+        'description': 'Github repo for unity games',
+        'url':'https://github.com/Pranadi777/League-of-Legends-Trainer'
+    },
 
 ]
 
@@ -68,7 +104,7 @@ links = [
 # 102 bash         202 Django      302 EC2        402 MongoDB      502 Digitalocean    602 Google Analytics
 # 103 C#           203 HTMX        303 EFS        403 SQlite       503 Nginx           603 Tableau
 # 104 CSS          204 React       304 RDS        404 MS Access    504 Gunicorn        604 WordPress
-# 105 HTML         205 Nextjs                305 Route 53                                        605 DjangoNinja
+# 105 HTML         205 Nextjs      305 Route 53   405 mysql                            605 DjangoNinja
 # 106 JAVA                         306 VPC 
 # 107 jQuery                       307 EBS
 # 108 JavaScript                   
@@ -114,8 +150,38 @@ projects = [
         'method': 'Develop an API on Django, with a React/Next.js to consume it.',
         'result': 'Built an API using Django Ninja, with a React/Next.js app that consumes it.',
         'image': 'apidev.png',
-        'items': [101,104,105,107,108,201,202,203,204,205,307,403,605],
+        'items': [101,104,105,108,201,202,204,205,403,605],
         'links': [401]
+    },
+    {
+        'custom_id': 5,
+        'title': 'AWS Cloud Project',
+        'goal': 'Learn AWS resources by deploying an app on the cloud.',
+        'method': 'AWS resources including EC2, RDS, ASG, VPC, Load balancers, and more.',
+        'result': 'Deployed and hosted a highly-available WordPress application on AWS using EC2, RDS (SQL), Route 53, ASG, and VPC',
+        'image': 'AWS_architecture.png',
+        'items': [102,301,302,303,304,305,306,405,501,601,604],
+        'links': [501]
+    },
+    {
+        'custom_id': 6,
+        'title': 'Bioinformatics and RNAseq Analysis',
+        'goal': "While at UCSD's HUMANOID, become the in-house bioinformatician for RNAseq and SNP studies.",
+        'method': 'R, bioinformatic libraries, and bash/shell scripting.',
+        'result': 'Analyzed data for a dozen projects, resulting in a couple publications.',
+        'image': 'rnaseq.png',
+        'items': [109,601],
+        'links': [601,602,603]
+    },
+    {
+        'custom_id': 7,
+        'title': 'Unity Game Development',
+        'goal': "Play around with creating games in Unity",
+        'method': 'Use the Unity game engine, coding in C#',
+        'result': 'Created a couple of games including a dungeon crawler and lol skill shot trainer.',
+        'image': 'Dungeon-Crawler.png',
+        'items': [103],
+        'links': [701,702]
     },
 ]
 
@@ -302,6 +368,13 @@ items = [
         'reference': 'msaccess',
         'type':'database',
         'image': 'msaccess.png',
+    },
+    {
+        'custom_id' : 405,
+        'name': 'MySQL',
+        'reference': 'mysql',
+        'type':'database',
+        'image': 'mysql.png',
     },
     {
         'custom_id' : 501,
