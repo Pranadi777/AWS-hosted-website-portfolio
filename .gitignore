@@ -10,6 +10,7 @@ project_notes.txt
 website_portfolio/.env
 website_portfolio/db.sqlite3
 .ebextensions
+static/
 
 .DS_Store
 

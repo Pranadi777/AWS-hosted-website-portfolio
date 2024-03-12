@@ -130,7 +130,7 @@ projects = [
         'method': "Create a simple Django app, with a trendy front-end (HTMX), deployed on everyone's favorite, AWS cloud.",
         'result': 'Landing a job is still TBD :).',
         'image': 'portfolio_website.png',
-        'items': [101,104,105,107,108,201,202,203,501,307,403,601,602],
+        'items': [101,104,105,107,108,201,202,203,501,301,302,305,306,307,307,403,601,602],
         'links': [201]
     },
     {

@@ -1,5 +1,6 @@
 # Potfolio Website
 
+![Architecture](aeb-architecture2.png)  
 ![front page](front_page.png)
 
 The goal of this portfolio was to:

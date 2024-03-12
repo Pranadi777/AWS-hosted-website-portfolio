@@ -35,7 +35,7 @@ if DEBUG:
     ALLOWED_HOSTS = []
     print("debug is set to True")
 else:
-    ALLOWED_HOSTS = ['jobgenome.bio','www.jobgenome.bio']
+    ALLOWED_HOSTS = ['django-env.eba-jtvmnwrk.us-west-2.elasticbeanstalk.com','ramapranadi.com', 'www.ramapranadi.com']
 
 
 # Application definition
