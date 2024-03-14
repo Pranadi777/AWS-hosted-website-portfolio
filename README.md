@@ -1,15 +1,25 @@
-# Potfolio Website
+# Potfolio Website (AWS Elastic Beanstalk Deployment)
 
+## Link
+https://ramapranadi.com/ 
+
+## Architecture of deployment
 ![Architecture](aeb-architecture2.png)  
+
+## Front page
 ![front page](front_page.png)
 
 The goal of this portfolio was to:
 - showcase skills and projects
+- Deploy and host on AWS using Auto Scaling Groups, EC2s, Load Balancers, Security Groups, and Route 53
 - build a Django app with low redundancy, aligning with the philosophy of "don't Repeat Yourself"
     - using tempalte inheritance, granularizing as many objects as possible
     - using context data
 - target audience: hiring managers and recruiters
 
+## AWS
+- Elastic Beanstalk deployment
+- Leveraged Load Balancers, Auto Scaling Groups, EC2, Security groups, and Route 53
 
 ## Built On
 
