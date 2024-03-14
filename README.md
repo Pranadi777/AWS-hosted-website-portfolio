@@ -30,6 +30,6 @@ The goal of this portfolio was to:
 - HTMX (CDN)
 - Other dependencies listed in the `requirements.txt` file
 
-Open a browser and go to `http://127.0.0.1:8000` to view the site.
+Open a browser and go to `https://ramapranadi.com/ to view the site.
 
 
