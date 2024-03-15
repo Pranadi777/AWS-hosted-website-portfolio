@@ -6,9 +6,6 @@ https://ramapranadi.com/
 ## Architecture of deployment
 ![Architecture](aeb-architecture2.png)  
 
-## Front page
-![front page](front_page.png)
-
 The goal of this portfolio was to:
 - showcase skills and projects
 - Deploy and host on AWS using Auto Scaling Groups, EC2s, Load Balancers, Security Groups, and Route 53
