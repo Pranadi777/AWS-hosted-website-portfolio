@@ -48,6 +48,11 @@ def all_projects(request):
 
     return render(request, 'portfolio/all_projects/all_projects.html', context)
 
+#show all projects
+def all_publications(request):
+
+    return render(request, 'portfolio/publications/publications.html')
+
 #Contact page
 def contact(request):
 
