@@ -22,19 +22,6 @@
     </div>
 </div>
 
-<!-- This is where items (skills) are rendered based on their type -->
-<div class="container col-xxl-10 px-1">
-  {% include "portfolio/partials/languages/languages.html" %}
-  {% include "portfolio/partials/aws/awss.html" %}
-  {% include "portfolio/partials/frameworks/frameworks.html" %}
-  {% include "portfolio/partials/databases/databases.html" %}
-  {% include "portfolio/partials/hosting/hosting.html" %}
-  {% include "portfolio/partials/other/other.html" %}
+{% include "portfolio/partials/skills/skills.html" %}
 
-</div>
-<!-- This is the div that gets HTMX replacement for projects selected -->
-<div style="min-height: 500px" class="d-flex flex-wrap container col-xxl-10 px-1 py-5 project mb-5" id="projects">
-  Click any of the items above to view associated project(s)
-</div>
-
-  {% endblock %}
+{% endblock %}

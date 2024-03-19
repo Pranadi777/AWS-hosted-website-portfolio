@@ -53,6 +53,26 @@ def all_publications(request):
 
     return render(request, 'portfolio/publications/publications.html')
 
+
+#Skills page
+def skills(request):
+
+    #on load, get all the item objects to be rendered
+    items = Item.objects.all()
+    context = {
+        'items': items
+    }
+
+    return render(request, 'portfolio/skills/skills.html', context)
+
+
+#Contact page
+def hobbies(request):
+
+    return render(request, 'portfolio/hobbies/hobbies.html')
+
+
+
 #Contact page
 def contact(request):
 
