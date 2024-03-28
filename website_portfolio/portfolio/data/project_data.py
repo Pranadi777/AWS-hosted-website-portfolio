@@ -97,6 +97,12 @@ links = [
         'description': 'Github repo for unity games',
         'url':'https://github.com/Pranadi777/League-of-Legends-Trainer'
     },
+    {
+        'custom_id': 901,
+        'name':'Dockerhub Image Repo',
+        'description': 'Public Docker Repo for image',
+        'url':'https://hub.docker.com/r/rpranadi/techmax-as'
+    },
 
 ]
 
@@ -104,11 +110,11 @@ links = [
 # 102 bash         202 Django      302 EC2        402 MongoDB      502 Digitalocean    602 Google Analytics
 # 103 C#           203 HTMX        303 EFS        403 SQlite       503 Nginx           603 Tableau
 # 104 CSS          204 React       304 RDS        404 MS Access    504 Gunicorn        604 WordPress
-# 105 HTML         205 Nextjs      305 Route 53   405 mysql                            605 DjangoNinja
-# 106 JAVA                         306 VPC 
-# 107 jQuery                       307 EBS
-# 108 JavaScript                   
-# 109 R                         
+# 105 HTML         205 Nextjs      305 Route 53   405 mysql        505 Github          605 DjangoNinja
+# 106 JAVA                         306 VPC                         506 Terraform
+# 107 jQuery                       307 EBS                         507 CICD
+# 108 JavaScript                   308 S3                          508 Docker
+# 109 R                            309 Codebuilder
 # 110 VBA                        
 
 
@@ -183,7 +189,38 @@ projects = [
         'items': [103],
         'links': [701,702]
     },
+    {
+        'custom_id': 8,
+        'title': 'AWS-Continuous Integration and Continuous Deployment (CICD) of an app on AWS using Terraform, AWS CodeBuild, and Github',
+        'goal': "Learn the basics of CI/CD, Terraform, S3, and CodeBuild",
+        'method': 'See skills below',
+        'result': 'Created an app that was continously integrated and depployed via on Github commits, Terraform, AWS CodeBuild, and S3',
+        'image': 'cicd_terraform.png',
+        'items': [501,302,306,308,309,505,506,507,601],
+        'links': []
+    },
+    {
+        'custom_id': 9,
+        'title': 'Automating Docker Image Building using AWS Codebuild',
+        'goal': "Learn the basics of building Docker images and automating the process using AWS Codebuild",
+        'method': 'See skills below',
+        'result': 'Codebuild job that automatically builds a Docker image and pushes it to Dockerhub.',
+        'image': 'codebuild_docker.png',
+        'items': [501,309,505,507,508,601],
+        'links': [901]
+    },
 ]
+
+# 101 python       201 Bootstrap   301 ASG        401 PostgreSQL   501 AWS             601 Linux
+# 102 bash         202 Django      302 EC2        402 MongoDB      502 Digitalocean    602 Google Analytics
+# 103 C#           203 HTMX        303 EFS        403 SQlite       503 Nginx           603 Tableau
+# 104 CSS          204 React       304 RDS        404 MS Access    504 Gunicorn        604 WordPress
+# 105 HTML         205 Nextjs      305 Route 53   405 mysql        505 Github          605 DjangoNinja
+# 106 JAVA                         306 VPC                         506 Terraform
+# 107 jQuery                       307 EBS                         507 CICD
+# 108 JavaScript                   308 S3                          508 Docker
+# 109 R                            309 Codebuilder
+# 110 VBA       
 
 items = [
     {
@@ -342,6 +379,20 @@ items = [
         'image': 'ebs.svg',
     },
     {
+        'custom_id' : 308,
+        'name': 'S3',
+        'reference': 's3',
+        'type':'aws',
+        'image': 's3.svg',
+    },
+    {
+        'custom_id' : 309,
+        'name': 'CodeBuild',
+        'reference': 'codebuild',
+        'type':'aws',
+        'image': 'codebuild.svg',
+    },
+    {
         'custom_id' : 401,
         'name': 'PostgreSQL',
         'reference': 'postgresql',
@@ -403,6 +454,34 @@ items = [
         'reference': 'gunicorn',
         'type':'hosting',
         'image': 'gunicorn.png',
+    },
+    {
+        'custom_id' : 505,
+        'name': 'Github',
+        'reference': 'github',
+        'type':'hosting',
+        'image': 'github.svg',
+    },
+    {
+        'custom_id' : 506,
+        'name': 'Terraform',
+        'reference': 'terraform',
+        'type':'hosting',
+        'image': 'terraform.svg',
+    },
+    {
+        'custom_id' : 507,
+        'name': 'CI/CD',
+        'reference': 'cicd',
+        'type':'hosting',
+        'image': 'cicd.png',
+    },
+    {
+        'custom_id' : 508,
+        'name': 'Docker',
+        'reference': 'docker',
+        'type':'hosting',
+        'image': 'docker.svg',
     },
     {
         'custom_id' : 601,
