@@ -103,6 +103,12 @@ links = [
         'description': 'Public Docker Repo for image',
         'url':'https://hub.docker.com/r/rpranadi/techmax-as'
     },
+    {
+        'custom_id': 1001,
+        'name':'Github',
+        'description': 'Python  script for lambda function',
+        'url':'https://github.com/Pranadi777/python-lambda-project'
+    },
 
 ]
 
@@ -115,7 +121,7 @@ links = [
 # 107 jQuery                       307 EBS                         507 CICD
 # 108 JavaScript                   308 S3                          508 Docker
 # 109 R                            309 Codebuilder
-# 110 VBA                        
+# 110 VBA                          310 Lambda
 
 
 projects = [
@@ -209,6 +215,16 @@ projects = [
         'items': [501,309,505,507,508,601],
         'links': [901]
     },
+    {
+        'custom_id': 10,
+        'title': 'Python + AWS Lmabda to Organize S3',
+        'goal': "Learn the basics of S3 and AWS Lambda functions.",
+        'method': 'See skills below',
+        'result': 'Wrote a Python script and configures a Lambda function to organize files in S3 bucket on upload/PUT (Lambda trigger)',
+        'image': 'lambda-project.png',
+        'items': [501,101,308,310,505],
+        'links': [1001]
+    },
 ]
 
 # 101 python       201 Bootstrap   301 ASG        401 PostgreSQL   501 AWS             601 Linux
@@ -220,7 +236,7 @@ projects = [
 # 107 jQuery                       307 EBS                         507 CICD
 # 108 JavaScript                   308 S3                          508 Docker
 # 109 R                            309 Codebuilder
-# 110 VBA       
+# 110 VBA                          310 Lambda
 
 items = [
     {
@@ -391,6 +407,13 @@ items = [
         'reference': 'codebuild',
         'type':'aws',
         'image': 'codebuild.svg',
+    },
+    {
+        'custom_id' : 310,
+        'name': 'Lambda',
+        'reference': 'lambda',
+        'type':'aws',
+        'image': 'lambda.svg',
     },
     {
         'custom_id' : 401,
