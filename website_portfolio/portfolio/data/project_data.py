@@ -120,8 +120,13 @@ links = [
 # 106 JAVA                         306 VPC                         506 Terraform
 # 107 jQuery                       307 EBS                         507 CICD
 # 108 JavaScript                   308 S3                          508 Docker
-# 109 R                            309 Codebuilder
+# 109 R                            309 Codebuilder                 509 Kubernetes
 # 110 VBA                          310 Lambda
+#                                  311 EKS
+#                                  312 ECR
+#                                  313 Secrets Manager
+#                                  314 IAM
+#                                  315 Cloud Formation
 
 
 projects = [
@@ -225,6 +230,16 @@ projects = [
         'items': [501,101,308,310,505],
         'links': [1001]
     },
+    {
+        'custom_id': 11,
+        'title': 'Kubernetes + EKS Deployment',
+        'goal': "Learn the basics of Kubernetes, Docker, and EKS",
+        'method': 'See skills below',
+        'result': 'Deployed a dynamic app using Kubernetes, Docker image, and EKS',
+        'image': 'kubernetes-project.png',
+        'items': [501,601,301,302,304,305,306,311,312,313,314,315,405,508,509],
+        'links': []
+    },
 ]
 
 # 101 python       201 Bootstrap   301 ASG        401 PostgreSQL   501 AWS             601 Linux
@@ -235,8 +250,13 @@ projects = [
 # 106 JAVA                         306 VPC                         506 Terraform
 # 107 jQuery                       307 EBS                         507 CICD
 # 108 JavaScript                   308 S3                          508 Docker
-# 109 R                            309 Codebuilder
+# 109 R                            309 Codebuilder                 509 Kubernetes
 # 110 VBA                          310 Lambda
+#                                  311 EKS
+#                                  312 ECR
+#                                  313 Secrets Manager
+#                                  314 IAM
+#                                  315 Cloud Formation
 
 items = [
     {
@@ -414,6 +434,41 @@ items = [
         'reference': 'lambda',
         'type':'aws',
         'image': 'lambda.svg',
+    },
+    {
+        'custom_id' : 311,
+        'name': 'EKS',
+        'reference': 'eks',
+        'type':'aws',
+        'image': 'eks.svg',
+    },
+    {
+        'custom_id' : 312,
+        'name': 'ECR',
+        'reference': 'ecr',
+        'type':'aws',
+        'image': 'ecr.svg',
+    },
+    {
+        'custom_id' : 313,
+        'name': 'SM',
+        'reference': 'secrets manager',
+        'type':'aws',
+        'image': 'secretsmanager.svg',
+    },
+    {
+        'custom_id' : 314,
+        'name': 'IAM',
+        'reference': 'iam',
+        'type':'aws',
+        'image': 'iam.svg',
+    },
+    {
+        'custom_id' : 315,
+        'name': 'CF',
+        'reference': 'cloud formation',
+        'type':'aws',
+        'image': 'cloudformation.svg',
     },
     {
         'custom_id' : 401,
